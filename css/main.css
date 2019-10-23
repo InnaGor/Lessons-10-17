@@ -1,0 +1,305 @@
+.container_Fresh_life {
+  background: #f9f9fb;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+}
+
+.container_Fresh_life__header {
+  padding-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+.logo {
+  width: 127px;
+  height: 52px;
+  margin-left: 13%;
+}
+
+nav {
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 700;
+  font-family: Raleway;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+nav a {
+  text-decoration: none;
+  color: #262626;
+  padding: 9px;
+}
+
+nav a:hover {
+  border-top: 3px solid #ff6033;
+}
+
+.nav-hiden {
+  display: none;
+}
+
+#menu_checkbox {
+  display: none;
+}
+
+.toggle-button {
+  margin-right: 40px;
+  cursor: pointer;
+}
+
+.toggle-button:after {
+  content: attr(data-open);
+  font-size: 20px;
+}
+
+.section_Fresh-life {
+  margin-top: 20%;
+  margin-left: 10%;
+  width: 370px;
+  display: block;
+}
+
+.section_Fresh-life h1 {
+  color: #262626;
+  font-family: "Raleway - Heavy";
+  font-size: 60px;
+  font-weight: 400;
+}
+
+.section_Fresh-life p {
+  margin-bottom: 35px;
+  color: #262626;
+  font-family: Raleway;
+  font-size: 17px;
+  font-weight: 300;
+}
+
+.section_Fresh-life a {
+  background-color: #ff6033;
+  padding: 20px 25px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+  font-family: Raleway;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+@media screen and (max-width: 420px) {
+  .section_Fresh-life {
+    width: 80%;
+  }
+}
+
+@media screen and (min-width: 300px) and (max-width: 1149px) {
+  #scroll {
+    margin-top: 30%;
+    margin-bottom: 7%;
+    margin-right: 50%;
+    margin-left: 50%;
+  }
+}
+
+@media screen and (min-width: 1150px) {
+  #scroll {
+    margin-top: 10%;
+    margin-right: 50%;
+    margin-left: 50%;
+  }
+}
+
+@media screen and (min-width: 640px) {
+  .container_Fresh_life {
+    background-image: url(/img/1img.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 1000px;
+  }
+  .container_Fresh_life nav {
+    margin-right: 10%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .container_Fresh_life nav .toggle-button {
+    display: none;
+  }
+  .container_Fresh_life nav .nav-hiden {
+    display: block;
+  }
+}
+
+#about-us {
+  background: #00c4c4;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+}
+
+#about-us .about-us {
+  width: 50%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+#about-us h1 {
+  color: #ffffff;
+  font-family: Raleway;
+  font-size: 90px;
+  font-weight: 700;
+}
+
+#about-us p {
+  margin-top: 34px;
+  font-family: Raleway;
+  font-size: 17px;
+  font-weight: 300;
+  color: #ffffff;
+}
+
+#about-us img {
+  width: 100%;
+}
+
+@media screen and (min-width: 1135px) {
+  #about-us {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  #about-us img {
+    margin-left: 11%;
+    margin-top: 70px;
+  }
+  #about-us .about-us {
+    margin-right: 11%;
+  }
+  #about-us .about-us h1 {
+    margin-top: 180px;
+  }
+}
+
+#our-services {
+  background-color: #70bfff;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (min-width: 769px) {
+  #our-services {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+#our-services .tomato {
+  height: 400px;
+  width: 70%;
+  background-image: url(/img/3tomatos.png);
+  background-position: 50% 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 1111px) {
+  #our-services .tomato {
+    width: 50%;
+    height: 540px;
+  }
+}
+
+#our-services .tomato h1 {
+  text-align: center;
+  font-family: Raleway;
+  font-size: 90px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.our-services {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.servise-button {
+  width: 400px;
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media screen and (min-width: 769px) {
+  .servise-button {
+    margin-left: 25%;
+  }
+}
+
+.servise-button p {
+  font-family: Raleway;
+  font-size: 20px;
+  font-weight: 700;
+  color: #262626;
+  text-align: center;
+}
+
+.servise-button img {
+  border-left: 1px solid #9d9d9d;
+  height: 100%;
+}
+/*# sourceMappingURL=main.css.map */
