@@ -75,9 +75,9 @@ nav a:hover {
 
 .section_Fresh-life h1 {
   color: #262626;
-  font-family: "Raleway - Heavy";
+  font-family: "Raleway";
   font-size: 60px;
-  font-weight: 400;
+  font-weight: 600;
 }
 
 .section_Fresh-life p {
@@ -148,9 +148,12 @@ nav a:hover {
   }
 }
 
-#about-us {
+.about-us_background {
   background: #00c4c4;
   width: 100%;
+}
+
+#about-us {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -161,7 +164,7 @@ nav a:hover {
 }
 
 #about-us .about-us {
-  width: 50%;
+  width: 70%;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
@@ -170,15 +173,16 @@ nav a:hover {
 #about-us h1 {
   color: #ffffff;
   font-family: Raleway;
-  font-size: 90px;
+  font-size: 60px;
   font-weight: 700;
 }
 
 #about-us p {
-  margin-top: 34px;
   font-family: Raleway;
   font-size: 17px;
   font-weight: 300;
+  line-height: 27px;
+  margin-top: 34px;
   color: #ffffff;
 }
 
@@ -207,13 +211,18 @@ nav a:hover {
     margin-right: 11%;
   }
   #about-us .about-us h1 {
-    margin-top: 180px;
+    margin-bottom: 34px;
+    font-size: 90px;
+    font-weight: 700;
   }
 }
 
 #our-services {
   background-color: #70bfff;
   width: 100%;
+}
+
+#our-services .title-and-buttons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -227,36 +236,64 @@ nav a:hover {
 }
 
 @media screen and (min-width: 769px) {
-  #our-services {
+  #our-services .title-and-buttons {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
 
 #our-services .tomato {
+  margin-top: 8%;
+  margin-bottom: 8%;
   height: 400px;
   width: 70%;
   background-image: url(../img/3tomatos.png);
   background-position: 50% 50%;
   background-size: contain;
   background-repeat: no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-@media screen and (max-width: 1111px) {
+@media screen and (max-width: 769px) {
   #our-services .tomato {
-    width: 50%;
-    height: 540px;
+    width: 75%;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  #our-services .tomato {
+    width: 100% auto;
+    height: 600px;
   }
 }
 
 #our-services .tomato h1 {
+  margin: 30px 0;
   text-align: center;
   font-family: Raleway;
-  font-size: 90px;
+  font-size: 70px;
   font-weight: 700;
   color: #ffffff;
+  text-shadow: black 0 0 2px;
+}
+
+@media screen and (min-width: 769px) {
+  #our-services .tomato h1 {
+    font-size: 90px;
+  }
 }
 
 .our-services {
@@ -267,10 +304,20 @@ nav a:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (min-width: 769px) {
+  .our-services {
+    margin-left: 17%;
+  }
 }
 
 .servise-button {
-  width: 400px;
+  margin-bottom: 20px;
+  width: 90%;
   height: 100px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -282,15 +329,62 @@ nav a:hover {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
 }
 
 @media screen and (min-width: 769px) {
   .servise-button {
-    margin-left: 25%;
+    width: 400px;
   }
 }
 
-.servise-button p {
+.servise-button:nth-of-type(1) {
+  background-image: url(../img/3icon_1.png);
+  background-repeat: no-repeat;
+  background-position: 93% 50%;
+}
+
+.servise-button:nth-of-type(2) {
+  background-image: url(../img/3icon_2.png);
+  background-repeat: no-repeat;
+  background-position: 93% 50%;
+}
+
+.servise-button:nth-of-type(3) {
+  background-image: url(../img/3icon_3.png);
+  background-repeat: no-repeat;
+  background-position: 93% 50%;
+}
+
+.servise-button:nth-of-type(4) {
+  background-image: url(../img/3icon_4.png);
+  background-repeat: no-repeat;
+  background-position: 93% 50%;
+}
+
+.button-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 75%;
+  height: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+@media screen and (min-width: 769px) {
+  .button-text {
+    border-right: 1px solid #9d9d9d;
+  }
+}
+
+p {
   font-family: Raleway;
   font-size: 20px;
   font-weight: 700;
@@ -298,8 +392,85 @@ nav a:hover {
   text-align: center;
 }
 
-.servise-button img {
-  border-left: 1px solid #9d9d9d;
-  height: 100%;
+#gallery {
+  background-color: #ffe92f;
+}
+
+#gallery .gallery-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#gallery .gallery-container .gallery-description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 6.5%;
+  margin-bottom: 3%;
+  width: 38%;
+}
+
+@media screen and (max-width: 768px) {
+  #gallery .gallery-container .gallery-description {
+    width: 80%;
+  }
+}
+
+#gallery .gallery-container .gallery-description h1 {
+  color: #262626;
+  font-family: Raleway;
+  font-size: 90px;
+  font-weight: 700;
+  line-height: 27px;
+}
+
+#gallery .gallery-container .gallery-description p {
+  font-family: Raleway;
+  font-size: 17px;
+  font-weight: 300;
+  line-height: 27px;
+  color: #262626;
+}
+
+#gallery .gallery-container button {
+  margin-bottom: 7.8%;
+  width: 200px;
+  height: 55px;
+  -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+  background-color: #5585a2;
+  border: none;
+}
+
+#gallery .gallery-container button a {
+  text-decoration: none;
+  color: #ffffff;
+  font-family: Raleway;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 27px;
+  text-transform: uppercase;
+  text-align: center;
 }
 /*# sourceMappingURL=main.css.map */

@@ -1,0 +1,7 @@
+@mixin paragraph-text {
+    font-family: Raleway;
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 27px;
+    @content;
+    }
