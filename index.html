@@ -28,8 +28,8 @@
                     <a href="#gallery">Gallery</a>
                     <!-- картинки вертикаль, flex
                  -->
-                    <a href="">Blog</a>
-                    <a href="">Contact</a>
+                    <a href="#blog">Blog</a>
+                    <a href="#contact">Contact</a>
                     <!-- создать кнопку и displey: none, чтобы submit сработал -->
                     <!-- меню растянуть на весь экран, когда маленький экран -->
                 </div>
@@ -157,7 +157,38 @@
             <button class="blog-button"> <a href="#"> VIEW MORE</a></button>
         </section>
     </div>
-    <div class="container "></div>
+    <div id="contact">
+        <section class="contact">
+            <div class="contact-description">
+                <h1>Contact</h1>
+                <p>For new projects, ideas, business or anything
+                    you'd like to discuss, contact with me!</p>
+            </div>
+            <div class="contact-container">
+                <form action="GET">
+
+                    <input type="text" name="name" placeholder="Auskteez Tran">
+                    <input type="email" name="email" placeholder="Your email...">
+                    <input type="tel" name="tel" placeholder="Your phone number...">
+                    <textarea placeholder="Your message..."></textarea>
+
+                </form>
+                <div class="contact-information">
+                    <h2> ADDRESS</h2>
+                    <p>123 City name, Street, City, Country</p>
+                    <h2>EMAIL</h2>
+                    <p>cahee@domain.com</p>
+                    <h2>PHONE</h2>
+                    <p>+012 345 6789</p>
+                </div>
+            </div>
+        </section>
+    </div>
+    <footer>
+        <div class="copyright">© 2015 Company. All right reserved.</div>
+        <div class="Cahee"><img src="./img/9logo-small.png" alt="logo"></div>
+        <div class="made-by">Made with <span>love</span> by Auskteez</div>
+    </footer>
 </body>
 
 </html>

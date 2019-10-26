@@ -1,14 +1,3 @@
-body {
-  width: 80%;
-  margin: 0 auto;
-}
-
-@media screen and (max-width: 768px) {
-  body {
-    width: 100%;
-  }
-}
-
 .container_Fresh_life {
   background: #f9f9fb;
   background-repeat: no-repeat;
@@ -715,6 +704,7 @@ p {
 
 #blog {
   background-color: #b07cf7;
+  width: 100%;
 }
 
 #blog .blog-container {
@@ -781,42 +771,57 @@ p {
 }
 
 #blog .blog-container .blog-items {
-  width: 90%;
-  display: -ms-grid;
-  display: grid;
-  margin: 0 auto;
-  -ms-grid-rows: 310px;
-      grid-template-rows: 310px;
-  -ms-grid-columns: 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr;
-  gap: 2vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1170px) {
   #blog .blog-container .blog-items {
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-    gap: 2vh;
-    width: 80%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 50px;
   }
+}
+
+#blog .blog-container .blog-items .item {
+  width: 370px;
+  height: 310px;
 }
 
 #blog .blog-container .blog-items .item:nth-of-type(1) {
   background-image: url(../img/7smoothy1.png);
+  margin-right: 30px;
+}
+
+@media screen and (max-width: 1170px) {
+  #blog .blog-container .blog-items .item:nth-of-type(1) {
+    margin-bottom: 30px;
+    margin-right: 0;
+  }
 }
 
 #blog .blog-container .blog-items .item:nth-of-type(2) {
   background-image: url(../img/7green2.png);
   background-position: 60%;
+  margin-right: 30px;
+}
+
+@media screen and (max-width: 1170px) {
+  #blog .blog-container .blog-items .item:nth-of-type(2) {
+    margin-bottom: 30px;
+    margin-right: 0;
+  }
 }
 
 #blog .blog-container .blog-items .item:nth-of-type(3) {
   background-image: url(../img/7raspberries3.png);
-}
-
-#blog .blog-container .blog-items .item {
-  width: 100%;
-  background-repeat: no-repeat;
 }
 
 #blog .blog-container .blog-items .item .data {
@@ -837,12 +842,54 @@ p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-#blog .blog-container button {
+#blog .blog-container .blog-items .item .data .number {
+  width: 33px;
+  height: 23px;
+  color: #ffffff;
+  font-family: Raleway;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 25px;
+}
+
+#blog .blog-container .blog-items .item .data .month {
+  width: 44px;
+  height: 15px;
+  margin-bottom: 3px;
+  color: #ffffff;
+  font-family: "Raleway - Heavy";
+  font-size: 21px;
+  font-weight: 400;
+  line-height: 25px;
+  text-transform: uppercase;
+}
+
+#blog .blog-container .blog-items h1 {
+  width: 307px;
+  margin: 130px 45px 0px 20px;
+  color: #ffffff;
+  font-family: Raleway;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 25px;
+}
+
+#blog .blog-container .blog-items p {
+  display: block;
+  margin-top: 10px;
+  margin-left: 20px;
+  font-family: "Raleway - Light";
+  font-size: 13px;
+  font-weight: 300;
+  color: #ffffff;
+}
+
+#blog button {
   margin-top: 5%;
   margin-bottom: 7.8%;
   width: 200px;
@@ -853,7 +900,7 @@ p {
   border: none;
 }
 
-#blog .blog-container button a {
+#blog button a {
   text-decoration: none;
   color: #ffffff;
   font-family: Raleway;
@@ -862,5 +909,279 @@ p {
   line-height: 25px;
   text-transform: uppercase;
   text-align: center;
+}
+
+#contact {
+  background-image: url(../img/8contact.png);
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#contact .contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#contact .contact .contact-description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 6.5%;
+  margin-bottom: 3%;
+  width: 38%;
+}
+
+@media screen and (max-width: 768px) {
+  #contact .contact .contact-description {
+    width: 80%;
+  }
+}
+
+#contact .contact .contact-description h1 {
+  color: #262626;
+  font-family: Raleway;
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 25px;
+}
+
+@media screen and (min-width: 769px) {
+  #contact .contact .contact-description h1 {
+    font-size: 90px;
+  }
+}
+
+#contact .contact .contact-description p {
+  font-family: Raleway;
+  font-size: 17px;
+  font-weight: 300;
+  line-height: 27px;
+  color: #262626;
+}
+
+@media screen and (min-width: 1440px) {
+  #contact .contact .contact-description p {
+    width: 50%;
+  }
+}
+
+#contact .contact .contact-container {
+  margin-left: 11%;
+  margin-right: 23%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media screen and (max-width: 992px) {
+  #contact .contact .contact-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+#contact .contact .contact-container form {
+  max-width: 500px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 120px;
+}
+
+@media screen and (min-width: 992px) {
+  #contact .contact .contact-container form {
+    margin-right: 11%;
+  }
+}
+
+#contact .contact .contact-container form input {
+  max-width: 500px;
+  width: 100%;
+  height: 50px;
+  margin-bottom: 15px;
+  background-color: #00c4c4;
+  opacity: 0.5;
+  border: none;
+}
+
+#contact .contact .contact-container form input:hover {
+  background-color: #00c4c4;
+  border-left: 5px solid #355b82;
+}
+
+#contact .contact .contact-container form input::-webkit-input-placeholder {
+  font-size: .75rem;
+  font-weight: 300;
+  color: #ffffff;
+}
+
+#contact .contact .contact-container form input:-ms-input-placeholder {
+  font-size: .75rem;
+  font-weight: 300;
+  color: #ffffff;
+}
+
+#contact .contact .contact-container form input::-ms-input-placeholder {
+  font-size: .75rem;
+  font-weight: 300;
+  color: #ffffff;
+}
+
+#contact .contact .contact-container form input::placeholder {
+  font-size: .75rem;
+  font-weight: 300;
+  color: #ffffff;
+}
+
+#contact .contact .contact-container form textarea {
+  max-width: 500px;
+  width: 100%;
+  height: 250px;
+  background-color: #00c4c4;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 18px 0 0 20px;
+  opacity: 0.5;
+  border: none;
+}
+
+#contact .contact .contact-container form textarea:hover {
+  background-color: #00c4c4;
+  border-left: 5px solid #355b82;
+}
+
+#contact .contact .contact-container form textarea textarea::-webkit-input-placeholder {
+  font-size: 15px;
+  font-weight: 300;
+  color: #ffffff;
+}
+
+#contact .contact .contact-container form textarea textarea:-ms-input-placeholder {
+  font-size: 15px;
+  font-weight: 300;
+  color: #ffffff;
+}
+
+#contact .contact .contact-container form textarea textarea::-ms-input-placeholder {
+  font-size: 15px;
+  font-weight: 300;
+  color: #ffffff;
+}
+
+#contact .contact .contact-container form textarea textarea::placeholder {
+  font-size: 15px;
+  font-weight: 300;
+  color: #ffffff;
+}
+
+#contact .contact .contact-container form .contact-information {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+#contact .contact .contact-container form .contact-information h2 {
+  font-family: "Raleway - Bold";
+  font-size: 17px;
+  font-weight: 700;
+}
+
+#contact .contact .contact-container form .contact-information p {
+  font-family: Raleway;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 25px;
+}
+
+footer {
+  width: 100%;
+  height: 90px;
+  background: #262626;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .copyright {
+  padding-left: 11%;
+  color: #b9b9b9;
+  font-family: Raleway;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+footer .made-by {
+  padding-right: 11%;
+  color: #b9b9b9;
+  font-family: Raleway;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 25px;
+}
+
+footer .made-by span {
+  color: #ff2b58;
+  font-family: "Raleway - Bold";
+  font-weight: 900;
 }
 /*# sourceMappingURL=main.css.map */
